@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit93956bac372f6f0d90c8ffe30df9758c
+class ComposerStaticInit4702e60762590557075b333aeac5baf8
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -288,8 +288,8 @@ class ComposerStaticInit93956bac372f6f0d90c8ffe30df9758c
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -479,6 +479,7 @@ class ComposerStaticInit93956bac372f6f0d90c8ffe30df9758c
         'AWS\\CRT\\OptionValue' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Options.php',
         'AWS\\CRT\\Options' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Options.php',
         'App\\Brandname' => __DIR__ . '/../..' . '/app/Brandname.php',
+        'App\\Category' => __DIR__ . '/../..' . '/app/Category.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -738,6 +739,8 @@ class ComposerStaticInit93956bac372f6f0d90c8ffe30df9758c
         'Aws\\ConfigurationProviderInterface' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ConfigurationProviderInterface.php',
         'Aws\\ConnectCampaignService\\ConnectCampaignServiceClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ConnectCampaignService/ConnectCampaignServiceClient.php',
         'Aws\\ConnectCampaignService\\Exception\\ConnectCampaignServiceException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ConnectCampaignService/Exception/ConnectCampaignServiceException.php',
+        'Aws\\ConnectCases\\ConnectCasesClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ConnectCases/ConnectCasesClient.php',
+        'Aws\\ConnectCases\\Exception\\ConnectCasesException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ConnectCases/Exception/ConnectCasesException.php',
         'Aws\\ConnectContactLens\\ConnectContactLensClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ConnectContactLens/ConnectContactLensClient.php',
         'Aws\\ConnectContactLens\\Exception\\ConnectContactLensException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ConnectContactLens/Exception/ConnectContactLensException.php',
         'Aws\\ConnectParticipant\\ConnectParticipantClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ConnectParticipant/ConnectParticipantClient.php',
@@ -987,6 +990,8 @@ class ComposerStaticInit93956bac372f6f0d90c8ffe30df9758c
         'Aws\\IoTEvents\\IoTEventsClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTEvents/IoTEventsClient.php',
         'Aws\\IoTFleetHub\\Exception\\IoTFleetHubException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTFleetHub/Exception/IoTFleetHubException.php',
         'Aws\\IoTFleetHub\\IoTFleetHubClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTFleetHub/IoTFleetHubClient.php',
+        'Aws\\IoTFleetWise\\Exception\\IoTFleetWiseException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTFleetWise/Exception/IoTFleetWiseException.php',
+        'Aws\\IoTFleetWise\\IoTFleetWiseClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTFleetWise/IoTFleetWiseClient.php',
         'Aws\\IoTJobsDataPlane\\Exception\\IoTJobsDataPlaneException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTJobsDataPlane/Exception/IoTJobsDataPlaneException.php',
         'Aws\\IoTJobsDataPlane\\IoTJobsDataPlaneClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTJobsDataPlane/IoTJobsDataPlaneClient.php',
         'Aws\\IoTSecureTunneling\\Exception\\IoTSecureTunnelingException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTSecureTunneling/Exception/IoTSecureTunnelingException.php',
@@ -1100,6 +1105,8 @@ class ComposerStaticInit93956bac372f6f0d90c8ffe30df9758c
         'Aws\\Middleware' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Middleware.php',
         'Aws\\MigrationHubConfig\\Exception\\MigrationHubConfigException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/MigrationHubConfig/Exception/MigrationHubConfigException.php',
         'Aws\\MigrationHubConfig\\MigrationHubConfigClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/MigrationHubConfig/MigrationHubConfigClient.php',
+        'Aws\\MigrationHubOrchestrator\\Exception\\MigrationHubOrchestratorException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/MigrationHubOrchestrator/Exception/MigrationHubOrchestratorException.php',
+        'Aws\\MigrationHubOrchestrator\\MigrationHubOrchestratorClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/MigrationHubOrchestrator/MigrationHubOrchestratorClient.php',
         'Aws\\MigrationHubRefactorSpaces\\Exception\\MigrationHubRefactorSpacesException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/MigrationHubRefactorSpaces/Exception/MigrationHubRefactorSpacesException.php',
         'Aws\\MigrationHubRefactorSpaces\\MigrationHubRefactorSpacesClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/MigrationHubRefactorSpaces/MigrationHubRefactorSpacesClient.php',
         'Aws\\MigrationHubStrategyRecommendations\\Exception\\MigrationHubStrategyRecommendationsException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/MigrationHubStrategyRecommendations/Exception/MigrationHubStrategyRecommendationsException.php',
@@ -4131,6 +4138,7 @@ class ComposerStaticInit93956bac372f6f0d90c8ffe30df9758c
         'PHPUnit\\Util\\Annotation\\DocBlock' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Annotation/DocBlock.php',
         'PHPUnit\\Util\\Annotation\\Registry' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Annotation/Registry.php',
         'PHPUnit\\Util\\Blacklist' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Blacklist.php',
+        'PHPUnit\\Util\\Cloner' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Cloner.php',
         'PHPUnit\\Util\\Color' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Color.php',
         'PHPUnit\\Util\\ErrorHandler' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/ErrorHandler.php',
         'PHPUnit\\Util\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Exception.php',
@@ -4962,6 +4970,7 @@ class ComposerStaticInit93956bac372f6f0d90c8ffe30df9758c
         'SebastianBergmann\\Type\\NeverType' => __DIR__ . '/..' . '/sebastian/type/src/type/NeverType.php',
         'SebastianBergmann\\Type\\NullType' => __DIR__ . '/..' . '/sebastian/type/src/type/NullType.php',
         'SebastianBergmann\\Type\\ObjectType' => __DIR__ . '/..' . '/sebastian/type/src/type/ObjectType.php',
+        'SebastianBergmann\\Type\\Parameter' => __DIR__ . '/..' . '/sebastian/type/src/Parameter.php',
         'SebastianBergmann\\Type\\ReflectionMapper' => __DIR__ . '/..' . '/sebastian/type/src/ReflectionMapper.php',
         'SebastianBergmann\\Type\\RuntimeException' => __DIR__ . '/..' . '/sebastian/type/src/exception/RuntimeException.php',
         'SebastianBergmann\\Type\\SimpleType' => __DIR__ . '/..' . '/sebastian/type/src/type/SimpleType.php',
@@ -5766,10 +5775,10 @@ class ComposerStaticInit93956bac372f6f0d90c8ffe30df9758c
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit93956bac372f6f0d90c8ffe30df9758c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit93956bac372f6f0d90c8ffe30df9758c::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit93956bac372f6f0d90c8ffe30df9758c::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit93956bac372f6f0d90c8ffe30df9758c::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit4702e60762590557075b333aeac5baf8::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit4702e60762590557075b333aeac5baf8::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit4702e60762590557075b333aeac5baf8::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit4702e60762590557075b333aeac5baf8::$classMap;
 
         }, null, ClassLoader::class);
     }
