@@ -12,30 +12,37 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
         
         <title>OBMR</title>
-        <link rel="stylesheet" href="css/styles.css">
         
+   <link rel="stylesheet" href="css/styles.css">
+
         
 
        
     </head>
-    <body>
-        <H1>Original Brand レビュー</H1>
+        <h1>Original Brand レビュ-</h1>
         <div class="square"></div>
         
         
-        <div class=search_box>
-     <form method="GET" action="search">
-        <input type="search" size="60" placeholder="商品名もしくはブランド名を入力" name="search" value="@if (isset($search)) {{ $search }} @endif">
-       <button type="submit">検索</button>
+    <div class=search_box>
+          <form method="GET" action="/search">
+        <input type="text" size="60" placeholder="商品名もしくはブランド名を入力" name="keyword" value="@if (isset($keyword)) @endif">
+       <input type="submit" value="検索">
      </form>
-     </div>
+    </div>
      
+    <div class=create_new>
+      <a class="Link" href="/posts/create">新規作成</a>
+    </div>
+     
+         <div class=create_new>
+      <a class="Link" href="/posts/review">新規作成</a>
+    </div>
      
 <div class="name_boxes">
     <p>オリジナルブランド一覧</p>
      <div class="Top_Value">
       Top Value
-      <a class ="Link" href=""> </a>
+      <a class ="Link" href="/posts/topvalue"> </a>
      </div>
   
      <div class="Sselect">
