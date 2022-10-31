@@ -11,4 +11,16 @@ class Review extends Model
             ->select('id', 'name');
 
     }
+    public function post(){
+        return $this->belongsTo('App\Post');
+    }
+    protected $fillable = [
+         'id',
+         'title',
+         'comment',
+         'stars',
+         'post_id',
+         'user_id',
+    
+         ];
 }

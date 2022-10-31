@@ -4,27 +4,27 @@
 <html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
     <head>
         <meta charset="utf-8">
-        <title>OriginalBrandReview投稿</title>
+        <title>OriginalBrandReview商品投稿画面</title>
         <link rel="stylesheet" href="<?php echo e(secure_asset('css/create.css')); ?>">
         
     </head>
     <body>
         <h1>商品内容投稿</h1>
-        <form action="/posts" enctype="multipart/form-data" method="POST">
+        <form action="/posts/store" enctype="multipart/form-data" method="POST">
             <?php echo csrf_field(); ?>
             <div class="title">
-                <h2>タイトル</h2>
+                <h2>商品名</h2>
                 <input type="text" name="post[title]" placeholder="タイトル" value="<?php echo e(old('post.title')); ?>"/>
                 <p class="title__error" style="color:red"><?php echo e($errors->first('post.title')); ?></p>
             </div>
-            <div class="image">
+    <div class="image">
                 <label>画像</label><br />
     <input type="file" name="image" accept="image/png, image/jpeg">
     <?php echo e(csrf_field()); ?>
 
-            </div>
+    </div>
             <div class="body">
-                <h2>内容</h2>
+                <h2>商品概要</h2>
                 <textarea name="post[body]" placeholder="レビュー内容"><?php echo e(old('post.body')); ?></textarea>
                 <p class="body__error" style="color:red"><?php echo e($errors->first('post.body')); ?></p>
             </div>

@@ -14,7 +14,7 @@ class SearchController extends Controller
     public function search(Request $request) {
       $search= Request::get('keyword');
      if ($search) {
-$keywords = Post::where('title', 'like', "%$search%")->simplePaginate(2);
+$keywords = Post::where('title', 'like', "%$search%")->orwhere('body', 'like', "%$search%")->simplePaginate(5);
           }
         
           
