@@ -27,6 +27,12 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+
+import StarRating from 'vue-star-rating'
+Vue.component('star-rating', StarRating);
 const app = new Vue({
-    el: '#app',
+    el: '#star',
+    data: {
+        rating: 0
+    }
 });

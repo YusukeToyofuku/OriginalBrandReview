@@ -19,9 +19,10 @@ public function category()
     return $this->belongsTo('App\Category');
 }
 public function reviews() {
-    return $this->hasMany(\App\Review::class, 'post_id', 'id');
+    return $this->hasMany('App\Review');
 }
     protected $fillable = [
+    'id',
     'title',
     'body',
     'brandname_id',

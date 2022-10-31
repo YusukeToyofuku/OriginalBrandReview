@@ -1,0 +1,16 @@
+.list{
+    display:flex;
+    border:solid 3px;
+    width:40em;
+    margin:0 auto;
+    height:auto;
+}
+
+
+.list>img{
+width:auto;
+height:250px;
+object-fit:cover;
+
+}
+

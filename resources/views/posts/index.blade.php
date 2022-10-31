@@ -15,67 +15,65 @@
         
    <link rel="stylesheet" href="css/styles.css">
 
-        
-
-       
     </head>
-        <h1>Original Brand レビュ-</h1>
+ <body>
+        <h1 class="title">
+         <span>Original Brand レビュー</span>
+         </h1>
+         
         <div class="square"></div>
-        
         
     <div class=search_box>
           <form method="GET" action="/search">
-        <input type="text" size="60" placeholder="商品名もしくはブランド名を入力" name="keyword" value="@if (isset($keyword)) @endif">
+        <input type="text" size="60" placeholder="商品名を入力" name="keyword" value="@if (isset($keyword)) @endif">
        <input type="submit" value="検索">
      </form>
     </div>
      
-    <div class=create_new>
-      <a class="Link" href="/posts/create">新規作成</a>
-    </div>
-     
-         <div class=create_new>
-      <a class="Link" href="/posts/review">新規作成</a>
-    </div>
-     
+      <a class="Link" href="/posts/create">
+       <div class=create_new>商品新規追加</div>
+      </a>
+    
 <div class="name_boxes">
     <p>オリジナルブランド一覧</p>
-     <div class="Top_Value">
-      Top Value
-      <a class ="Link" href="/posts/topvalue"> </a>
-     </div>
+    
+     <a href="/brandnames/1"> 
+     <div class="Top_Value">イオン：Top Value </div>
+     </a>
+ 
+      <a href="/brandnames/2">
+       <div class="Sselect">スギ薬局：Sセレクト</div>
+       </a>
   
-     <div class="Sselect">
-      Sセレクト
-      <a class ="Link" href=""></a>
-     </div>
-  
-     <div class="Coops">
-      Coop's
-      <a class ="Link" href="" ></a>
-     </div>
+      <a href="brandnames/3" >
+       <div class="Coops">コープ：Coop's</div>
+      </a>
+     
+      <a href="" >
+       <div class="bothers">その他ブランド：その他商品</div>
+      </a>
 </div>
 
 <div class="category_boxes">
     <p>カテゴリ一覧</p>
-     <div class="foods">
-      食料品
-      <a class ="Link" href=""> </a>
-     </div>
-  
-     <div class="papers">
-      紙製品
-      <a class ="Link" href=""></a>
-     </div>
-  
-     <div class="cleaners">
-      掃除用品
-      <a class ="Link" href="" ></a>
-     </div>
+    
+      <a href="/categories/1">
+      <div class="foods">食料品</div>
+      </a>
+      
+  　　<a href="">
+     <div class="papers">紙製品</div>
+     </a>
+ 　　　
+ 　　　 <a href="">
+     <div class="cleaners">掃除用品</div>
+     </a>
      
-     <div class="others">
-      その他
-      <a class ="Link" href="" ></a>
-     </div>
+     <a href="">
+     <div class="cothers">その他</div>
+     </a>
+     
 </div>
+
+</body>
 @endsection
