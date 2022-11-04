@@ -19,7 +19,7 @@ Route::get('/posts/create', 'PostController@create');
 //商品投稿処理
 Route::post('/posts/store', 'PostController@store');
 //商品編集画面表示処理
-Route::get('/posts/{post}/edit', 'PostController@edit');
+Route::get('/posts/{post}/edit', 'PostController@edit')->name('posts.edit');
 //商品編集処理
 Route::put('/posts/{post}', 'PostController@update');
 //商品削除処理

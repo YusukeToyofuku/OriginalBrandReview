@@ -10,27 +10,30 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
-        
-        <title>OBMR</title>
+        <link rel="stylesheet" href="<?php echo e(secure_asset('css/list.css')); ?>">
+        <title>Result</title>
 </head>
 <body>
-  <H1>検索結果</H1>
-  <p>検索キーワード：<?php echo e($search); ?></p> 
+  <h1>検索結果</h1>
+  <h1>検索キーワード：<?php echo e($search); ?></h1> 
 <?php if(!$keywords->isEmpty()): ?>
-<table>
-    <th>商品ID</th><th>商品名</th><th>内容</th>
+<div class='lists'>
   <?php $__currentLoopData = $keywords; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $keyword): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-    <tr>
-    <td><?php echo e($keyword->id); ?></td>
-    <td><?php echo e($keyword->title); ?></td>
-    <td><?php echo e($keyword->body); ?></td>
-  </tr>
+    <div class='list'>
+    　　<img src="<?php echo e($keyword->image_path); ?>">
+                    <div class='content'>
+                      <h2 class='title'><?php echo e($keyword->title); ?></h2>
+                      <p class='body'><?php echo e($keyword->body); ?></p>
+                    </div>
+                    <div class='detail'>
+                      <div class='brandname_name'>ブランド名<?php echo e($keyword->brandname->name); ?></div>
+                      <div class='category_name'>カテゴリー名<?php echo e($keyword->category->name); ?></div>
+                      <a class="btn pushdown" href="<?php echo e(route ('posts.show',['post'=>$keyword->id])); ?>"><span>レビューを閲覧・投稿</span></a>
+                    </div>
+    </div>
   <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-  <?php echo e($keywords->appends(Request::only('keyword'))->links()); ?>
-
-  </table>
 <?php else: ?>　
-   <p>該当する検索結果は存在しません</p>
+   <div>該当する検索結果は存在しません</div>
    <form  method="GET" action="/search">
        <input type="text" name="keyword">
        <input type="submit" value="検索">

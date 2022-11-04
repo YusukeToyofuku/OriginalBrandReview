@@ -15,14 +15,12 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
            $table->bigIncrements('id');
-            $table->string('title',50);
-            $table->text('body');
+            $table->string('title',100);
+            $table->text('body',1000);
             $table->string('image_path')->nullable();
-            $table->unsignedBigInteger('brandname_id');
-            $table->unsignedBigInteger('category_id');
             $table->timestamps();
-            $table->foreign('brandname_id')->references('id')->on('brandnames');
-            $table->foreign('category_id')->references('id')->on('categories');
+            $table->integer('brandname_id')->unsigned();
+            $table->integer('category_id')->unsigned();
         });
     }
 

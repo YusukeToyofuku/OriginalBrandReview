@@ -17,9 +17,9 @@
 
     </head>
  <body>
-        <h1 class="title">
+        <div class="title">
          <span>Original Brand レビュー</span>
-         </h1>
+         </div>
          
         <div class="square"></div>
         
@@ -29,11 +29,11 @@
        <input type="submit" value="検索">
      </form>
     </div>
-     
+     <?php if(auth()->guard()->check()): ?>
       <a class="Link" href="/posts/create">
        <div class=create_new>商品新規追加</div>
       </a>
-    
+    <?php endif; ?>
 <div class="name_boxes">
     <p>オリジナルブランド一覧</p>
     

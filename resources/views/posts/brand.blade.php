@@ -15,11 +15,16 @@
             @foreach ($posts as $post)
                 <div class='list'>
                     <img src="{{ $post->image_path }}">
-                    <h2 class='title'>{{ $post->title }}</h2>
-                    <p class='body'>{{ $post->body }}</p>
-                    <p class='brandname_name'>{{ $brandname->name}}</p>
-                    <p class='category_name'>{{$post->category_name}}</p>
-         <a href="{{ route ('posts.show',['post'=>$post->id])}}">レビューを見る</a>
+                    <div class='content'>
+                      <h2 class='title'>{{ $post->title }}</h2>
+                      <p class='body'>{{ $post->body }}</p>
+                    </div>
+                    <div class='detail'>
+                      <div class='brandname_name'>ブランド名{{ $brandname->name}}</div>
+                      <div class='category_name'>カテゴリー名{{$post->category->name}}</div>
+                      <a class="btnedit pushdown" href="{{ route ('posts.edit',['post'=>$post->id])}}"><span>商品情報を編集・削除</span></a>
+                      <a class="btn pushdown" href="{{ route ('posts.show',['post'=>$post->id])}}"><span>レビューを閲覧・投稿</span></a>
+                    </div>
                 </div>
             @endforeach
         </div>

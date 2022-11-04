@@ -7,16 +7,25 @@
         <title>Category</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" href="{{secure_asset('css/list.css')}}">
     </head>
     <body>
-        <h1>{{$category->category_name}}</h1>
-        <div class='posts'>
+        <h1>{{$category->name}}の商品一覧</h1>
+        <div class='lists'>
             @foreach ($posts as $post)
-                <div class='post'>
+            <div class='list'>
+                <img src="{{ $post->image_path }}">
+                    <div class='content'>
                     <h2 class='title'>{{ $post->title }}</h2>
                     <p class='body'>{{ $post->body }}</p>
-                    <p class='category_name'>{{ $post->category_name }}</p>
                 </div>
+                <div class='detail'>
+                    <div class='brandname_name'>ブランド名{{ $post->brandname->name}}</div>
+                    <div class='category_name'>カテゴリー名{{ $category->name }}</div>
+                    <a class="btnedit pushdown" href="{{ route ('posts.edit',['post'=>$post->id])}}"><span>商品情報を編集・削除</span></a>
+                    <a class="btn pushdown" href="{{ route ('posts.show',['post'=>$post->id])}}"><span>レビューを閲覧・投稿</span></a>
+                </div>
+            </div>
             @endforeach
         </div>
         <div class='paginate'>

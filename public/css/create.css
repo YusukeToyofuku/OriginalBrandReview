@@ -1,3 +1,96 @@
-h1{color:red;
+h1{
+    color:#000000;
+    text-align: center;
+    font-family:Arial Black;
+}
 
+.posts{
+    border:double 5px;
+    margin:30px auto 30px auto;
+    background-color:#000000;
+    color:white;
+}
+.image{
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    display:flex;
+    border-bottom: 2px solid #000000;
+    padding:5px;
+}
+.image>input{
+    width:auto;
+    height:auto;
+}
+.title{
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: 2px solid #000000;
+	display:flex;
+	 padding:5px;
+}
+.title>input{
+    width:70%;
+}
+.body{
+    justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: 2px solid #000000;
+	padding:5px;
+}
+.body>textarea{
+    justify-content: center;
+    font-size: 20px;
+    height:300px;
+    width:95%;
+}
+.brandname{
+   justify-content: center;
+    border-bottom: 2px solid #000000;
+    display:flex;
+    padding:5px;
+}
+.brandname>select{
+    font-size:50px;
+}
+.category{
+    justify-content: center;
+    display:flex;
+    padding:5px;
+}
+.category>select{
+    font-size:50px;
+}
+.caution{
+    color:#ff0000;
+    text-align:right;
+}
+.submission{
+  display: flex;
+  justify-content: center;
+  border-radius : 5%;
+  font-size: 18pt;
+  cursor: pointer;
+  padding: 12px 12px;
+  background: #191970;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .3s;
+  box-shadow: 9px 9px #666666;
+  border: 2px solid #000000;
+  margin:0px auto 30px auto;
+}
+.submission:hover{
+    text-align: center;
+   box-shadow:none;       
+  color: #000000;
+  background: #ffffff;
+}
+.back{
+    text-align: center;
+    font-size: 20px
 }

@@ -8,46 +8,51 @@
         <link rel="stylesheet" href="<?php echo e(secure_asset('css/create.css')); ?>">
         
     </head>
-    <body>
-        <h1>商品内容投稿</h1>
-        <form action="/posts/store" enctype="multipart/form-data" method="POST">
+<body>
+<h1>商品内容投稿画面</h1>
+<div class="posts">
+<form action="/posts/store" enctype="multipart/form-data" method="POST">
             <?php echo csrf_field(); ?>
-            <div class="title">
-                <h2>商品名</h2>
-                <input type="text" name="post[title]" placeholder="タイトル" value="<?php echo e(old('post.title')); ?>"/>
-                <p class="title__error" style="color:red"><?php echo e($errors->first('post.title')); ?></p>
-            </div>
-    <div class="image">
-                <label>画像</label><br />
+<div class="image">
+    <h3>画像選択:&nbsp;</h3>
     <input type="file" name="image" accept="image/png, image/jpeg">
     <?php echo e(csrf_field()); ?>
 
-    </div>
-            <div class="body">
-                <h2>商品概要</h2>
-                <textarea name="post[body]" placeholder="レビュー内容"><?php echo e(old('post.body')); ?></textarea>
-                <p class="body__error" style="color:red"><?php echo e($errors->first('post.body')); ?></p>
-            </div>
-            <div class="brandname">
-    <h3>ブランド名</h>
+</div>
+
+ <div class="title">
+    <h3>商品名入力:&nbsp;</h3>
+    <input type="text" name="post[title]" placeholder="商品名" value="<?php echo e(old('post.title')); ?>"/>
+    <p class="title__error" style="color:red"><?php echo e($errors->first('post.title')); ?></p>
+ </div>
+ <div class="body">
+    <h3>商品概要入力</h3>
+    <textarea name="post[body]" placeholder="商品概要"><?php echo e(old('post.body')); ?></textarea>
+    <p class="body__error" style="color:red"><?php echo e($errors->first('post.body')); ?></p>
+ </div>
+
+ <div class="brandname">
+    <h3>ブランド名:&nbsp;</h3>
     <select name="post[brandname_id]">
         <?php $__currentLoopData = $brandnames; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $brandname): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <option value="<?php echo e($brandname->id); ?>"><?php echo e($brandname->name); ?></option>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </select>
-</div>
-<div class="category">
-    <h3>商品種類</h>
+ </div>
+ <div class="category">
+    <h3>商品カテゴリー:&nbsp;</h3>
     <select name="post[category_id]">
         <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <option value="<?php echo e($category->id); ?>"><?php echo e($category->name); ?></option>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </select>
+ </div>
 </div>
-            
-            <input type="submit" value="投稿する"/>
-        </form>
-        <div class="back">[<a href="/">戻る</a>]</div>
+            <div class='caution'>※商品名と商品概要は必ず入力してください。</div>
+            <input type="submit" class='submission' value="上記内容で投稿する"/>
+</form>
+
+        <div class="back">[<a href="/">トップページに戻る</a>]</div>
     </body>
 </html>
 <?php $__env->stopSection(); ?>
