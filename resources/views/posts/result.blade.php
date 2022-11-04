@@ -10,26 +10,31 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
-        
-        <title>OBMR</title>
+        <link rel="stylesheet" href="{{secure_asset('css/list.css')}}">
+        <title>Result</title>
 </head>
 <body>
-  <H1>検索結果</H1>
-  <p>検索キーワード：{{$search}}</p> 
+  <h1>検索結果</h1>
+  <h1>検索キーワード：{{$search}}</h1> 
 @if(!$keywords->isEmpty())
-<table>
-    <th>商品ID</th><th>商品名</th><th>内容</th>
+<div class='lists'>
   @foreach($keywords as $keyword)
-    <tr>
-    <td>{{$keyword->id}}</td>
-    <td>{{$keyword->title}}</td>
-    <td>{{$keyword->body}}</td>
-  </tr>
+    <div class='list'>
+    　　<img src="{{ $keyword->image_path }}">
+                    <div class='content'>
+                      <h2 class='title'>{{ $keyword->title }}</h2>
+                      <p class='body'>{{ $keyword->body }}</p>
+                    </div>
+                    <div class='detail'>
+                      <div class='brandname_name'>ブランド名{{ $keyword->brandname->name}}</div>
+                      <div class='category_name'>カテゴリー名{{$keyword->category->name}}</div>
+                      <a class="btnedit pushdown" href="{{ route ('posts.edit',['post'=>$post->id])}}"><span>商品情報を編集・削除</span></a>
+                      <a class="btn pushdown" href="{{ route ('posts.show',['post'=>$keyword->id])}}"><span>レビューを閲覧・投稿</span></a>
+                    </div>
+    </div>
   @endforeach
-  {{ $keywords->appends(Request::only('keyword'))->links()}}
-  </table>
 @else　
-   <p>該当する検索結果は存在しません</p>
+   <div>該当する検索結果は存在しません</div>
    <form  method="GET" action="/search">
        <input type="text" name="keyword">
        <input type="submit" value="検索">

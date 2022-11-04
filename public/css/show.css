@@ -1,9 +1,4 @@
-
-h1{
-text-align: center;
-margin:20px;
-}
-    .list{
+.post_detail{
     display:flex;
     border:solid 3px;
     width:40em;
@@ -11,8 +6,7 @@ margin:20px;
     height:auto;
 }
 
-
-.list>img{
+.post_detail>img{
 display:inline-block;
 width:30%;
 height:250px;
@@ -68,51 +62,4 @@ object-fit:cover;
     border:2px solid #000000;
     border-right:none;
     border-left:none;
-}
-
-.btn{
-    width: auto;
-    height: auto;
-    text-align: center;
-    background-color: gray;
-    display: block;
-    color: black;
-    border:2px solid #000000;
-    border-top:none;
-    border-left:none;
-    border-right:none;
-    box-shadow: 0 5px 0 #aaaaaa;
-    transition: all 0.2s ease;
-}
-
-.btn:hover{
-  border-color:transparent; 
-}
-
-.btn span {
-  position: relative;
-  z-index: 2;
-  display: block;
-    padding: 5px 5px;
-  background:#fff;
-  border-radius: 25px;
-  color:#333;
-}
-
-.pushdown:before {
-    content:"";
-    position: absolute;
-  z-index: -1;
-    top:4px;
-    left:0;
-    width: auto;
-    height: auto;
-  border-radius: 25px;
-    background-color: #333;
-}
-
-.pushdown:hover span {
-  background-color: #333;
-  color: #fff;
-  transform: translateY(4px);
 }
