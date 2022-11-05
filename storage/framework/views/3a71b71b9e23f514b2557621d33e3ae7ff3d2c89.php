@@ -21,6 +21,7 @@
 </head>
 <body>
     <div id="app">
+        <!--ヘッダー-->
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
@@ -59,7 +60,7 @@
                                     <a class="dropdown-item" href="<?php echo e(route('logout')); ?>"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        <?php echo e(__('Logout')); ?>
+                                        <?php echo e(__('ログアウト')); ?>
 
                                     </a>
 
@@ -77,6 +78,12 @@
         <main class="py-4">
             <?php echo $__env->yieldContent('content'); ?>
         </main>
+            <!--フッター-->
+     <nav class="footer navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class='copyright'>
+                © Copyright:<?php echo e(config('app.name')); ?>
+
+            </div>
     </div>
 </body>
 </html>

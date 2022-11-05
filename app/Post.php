@@ -21,8 +21,11 @@ public function category()
 public function reviews() {
     return $this->hasMany('App\Review');
 }
+public function getByPost(int $limit_count=10)
+{
+    return $this->review()->with('review')>orderBy('updated_at', 'DESC')->paginate($limit_count);
+}
     protected $fillable = [
-    'id',
     'title',
     'body',
     'brandname_id',

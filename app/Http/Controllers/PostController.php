@@ -28,6 +28,7 @@ public function create(Brandname $brandname,Category $category)
 public function store(Request $request, Post $post)
 {
     $post=new Post;
+    $post->user_id =$request->user()->id;
     $input = $request['post'];
      //画像が投稿されていた場合の処理
      if($request->file('image')){
