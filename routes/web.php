@@ -23,7 +23,7 @@ Route::get('/posts/{post}/edit', 'PostController@edit')->name('posts.edit');
 //商品編集処理
 Route::put('/posts/{post}', 'PostController@update');
 //商品削除処理
-Route::delete('/posts/{post}', 'PostController@delete');
+Route::delete('/posts/{post}', 'PostController@delete')->name('posts.delete');
 //個別商品詳細＆レビュー投稿
 Route::get('posts/{post}','ReviewController@show')->name('posts.show');
 //商品検索処理
@@ -34,6 +34,8 @@ Route::get('/brandnames/{brandname}','ListController@Brands');
 Route::get('/categories/{category}','ListController@Category');
 //レビュー投稿処理
 Route::post('/review/store','ReviewController@store');
+//レビュー削除処理
+Route::delete('/review/{review}','ReviewController@delete')->name('review.delete');;
 
 //メインページ
 Route::get('/', 'PostController@index');

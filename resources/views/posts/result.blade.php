@@ -28,7 +28,6 @@
                     <div class='detail'>
                       <div class='brandname_name'>ブランド名{{ $keyword->brandname->name}}</div>
                       <div class='category_name'>カテゴリー名{{$keyword->category->name}}</div>
-                      <a class="btnedit pushdown" href="{{ route ('posts.edit',['post'=>$keyword->id])}}"><span>商品情報を編集・削除</span></a>
                       <a class="btn pushdown" href="{{ route ('posts.show',['post'=>$keyword->id])}}"><span>レビューを閲覧・投稿</span></a>
                     </div>
     </div>

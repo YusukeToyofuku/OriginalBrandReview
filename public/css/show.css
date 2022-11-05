@@ -15,14 +15,16 @@ border-right: none;
 display:inline-block;
 max-width:200px;
 max-height:300px;
+min-width:10px;
+width:auto;
 object-fit:cover;
 }
 
 .content{
     display:inline-block;
     width:auto;
-    min-width:400px;
-    max-width:2000px;
+    min-width:200px;
+    max-width:500px;
     height:auto;
     min-height:300px;
     border:2px solid #000000;
@@ -133,6 +135,7 @@ margin:20px;
 .review_image{
     max-height:200px;
     max-width:100px;
+    margin-right: 10px;
 }
 .expecting_image{
     display: block;
@@ -177,3 +180,101 @@ margin:20px;
   .evaluation input[type='radio']:checked ~ label{
     color: #FFCC00;
   }
+  .guest_caution{
+      text-align: center;
+      color:#DD0000;
+  }
+  .guest_login{
+  font-weight: bold;
+  width:fit-content;
+  display: flex;
+  justify-content: center;
+  border-radius : 5%;
+  font-size: 18pt;
+  cursor: pointer;
+  padding: 12px 12px;
+  background: #FFAD90;
+  color: #000000;
+  line-height: 1em;
+  transition: .3s;
+  box-shadow: 9px 9px #666666;
+  border: 2px solid #000000;
+  margin:0px auto 30px auto;
+  }
+  .guest_login:hover{
+    text-align: center;
+   box-shadow:none;       
+  color: #000000;
+  background: white;
+}
+.posts{
+    border:double 5px;
+    margin:30px auto 30px auto;
+    background-color:#000000;
+    color:white;
+    padding-top: 20px;
+}
+.posts>h1{
+    text-align: center;
+    margin:20px;
+}
+.image{
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    display:flex;
+    border-bottom: 2px solid #000000;
+    padding:5px;
+}
+.image>input{
+    width:auto;
+    height:auto;
+}
+.title{
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: 2px solid #000000;
+	display:flex;
+	 padding:5px;
+}
+.title>input{
+    width:500px;
+    height:auto;
+}
+.body{
+    justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: 2px solid #000000;
+	padding:5px;
+}
+.body>textarea{
+    justify-content: center;
+    font-size: 20px;
+    height:300px;
+    width:95%;
+}
+.submission{
+  display: flex;
+  justify-content: center;
+  border-radius : 5%;
+  font-size: 18pt;
+  cursor: pointer;
+  padding: 12px 12px;
+  background: #191970;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .3s;
+  box-shadow: 9px 9px #666666;
+  border: 2px solid #000000;
+  margin:0px auto 30px auto;
+}
+.submission:hover{
+    text-align: center;
+   box-shadow:none;       
+  color: #000000;
+  background: #ffffff;
+}

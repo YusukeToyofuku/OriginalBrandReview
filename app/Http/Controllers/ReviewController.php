@@ -22,13 +22,13 @@ class ReviewController extends Controller
         $review->rating = $request->rating;
         $review->user_id = Auth::user()->id;
         $review->post_id =$request->post_id;
-        if($request->file('r_image')){
-    $image = $request->file('r_image');
-      // バケットの`myprefix`フォルダへアップロード
-    $path = Storage::disk('s3')->putFile('myprefix', $image, 'public');
-      // アップロードした画像のフルパスを取得
-    $review->r_image = Storage::disk('s3')->url($path);
-     }
+        if($request->file('image')){
+        $image = $request->file('image');
+        // バケットの`myprefix`フォルダへアップロード
+        $path = Storage::disk('s3')->putFile('myprefix', $image, 'public');
+        // アップロードした画像のフルパスを取得
+        $review->image_path = Storage::disk('s3')->url($path);
+        }
         $review->save();
         return redirect()->route ('posts.show',['post'=>$review->post_id]);
 
@@ -36,14 +36,20 @@ class ReviewController extends Controller
     
     public function show(Post $post,Brandname $brandname,Category $category,Review $review)
     {
-    $user_id = Auth::user()->id();
     
+    $user_id = Auth::id();
     return view('posts/show')->with([
         'post'=>$post,
         'reviews' =>$post,
         'review'=> $review,
         'brandname' => $brandname,
-        'category' => $category
+        'category' => $category,
+        'user_id' => $user_id
         ]);;
+    }
+    public function delete(Review $review)
+    {
+        $review->delete();
+        return redirect('/');
     }
 }

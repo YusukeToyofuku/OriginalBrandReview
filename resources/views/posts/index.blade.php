@@ -61,9 +61,7 @@
       <div class="foods">食料品</div>
       </a>
       
-  　　<a href="">
-     <div class="papers">紙製品</div>
-     </a>
+  　　<a class="papers" href="">紙製品</a>
  　　　
  　　　 <a href="">
      <div class="cleaners">掃除用品</div>
