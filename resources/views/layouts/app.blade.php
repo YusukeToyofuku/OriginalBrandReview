@@ -21,6 +21,7 @@
 </head>
 <body>
     <div id="app">
+        <!--ヘッダー-->
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -58,7 +59,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('ログアウト') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -75,6 +76,11 @@
         <main class="py-4">
             @yield('content')
         </main>
+            <!--フッター-->
+     <nav class="footer navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class='copyright'>
+                © Copyright:{{ config('app.name') }}
+            </div>
     </div>
 </body>
 </html>

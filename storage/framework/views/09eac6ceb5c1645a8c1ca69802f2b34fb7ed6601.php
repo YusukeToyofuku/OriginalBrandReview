@@ -15,7 +15,7 @@
             <?php echo csrf_field(); ?>
 <div class="image">
     <h3>画像選択:&nbsp;</h3>
-    <input type="file" name="image" accept="image/png, image/jpeg">
+    <input type="file" name="image">
     <?php echo e(csrf_field()); ?>
 
 </div>

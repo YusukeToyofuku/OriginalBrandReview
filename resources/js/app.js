@@ -7,6 +7,8 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import StarRating from 'vue-star-rating'
+import Vue from 'vue';
 
 /**
  * The following block of code may be used to automatically register your
@@ -20,7 +22,8 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-
+Vue.component('reveiw',require('./components/Reviewcomponent.vue'));
+Vue.component('star-rating', StarRating);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -28,11 +31,11 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 
-import StarRating from 'vue-star-rating'
-Vue.component('star-rating', StarRating);
+
+
+
 const app = new Vue({
-    el: '#star',
-    data: {
-        rating: 0
-    }
+   
+    el: '#app',
+    
 });
