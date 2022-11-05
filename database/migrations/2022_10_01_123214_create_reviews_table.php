@@ -17,13 +17,11 @@ class CreateReviewsTable extends Migration
         $table->bigIncrements('id');
         $table->integer('post_id');
         $table->integer('user_id');
-        $table->text('title',100);
-        $table->text('comment',1000);
+        $table->text('title',100)->nullable();
+        $table->text('comment',1000)->nullable();
         $table->string('image_path')->nullable();
         $table->integer('rating');
         $table->timestamps();
-
-        
         });
     }
 
