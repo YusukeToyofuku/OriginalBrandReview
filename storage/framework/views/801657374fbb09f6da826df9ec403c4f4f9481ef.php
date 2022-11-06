@@ -5,24 +5,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Original Brand レビュー</title>
-
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
-        
         <title>OBMR</title>
-        
-   <link rel="stylesheet" href="css/styles.css">
-
+        <link rel="stylesheet" href="<?php echo e(secure_asset('css/styles.css')); ?>">
     </head>
  <body>
-        <div class="title">
-         <span>Original Brand レビュー</span>
+        <div class="top">
+         <img src="<?php echo e(asset('images/main.jpg')); ?>">
          </div>
          
-        <div class="square"></div>
-        
+
     <div class=search_box>
           <form method="GET" action="/search">
         <input type="text" size="60" placeholder="商品名を入力" name="keyword" value="<?php if(isset($keyword)): ?> <?php endif; ?>">
@@ -30,46 +24,32 @@
      </form>
     </div>
      <?php if(auth()->guard()->check()): ?>
-      <a class="Link" href="/posts/create">
-       <div class=create_new>商品新規追加</div>
-      </a>
+     <div class="create">
+      <a class="create_new pushright" href="/posts/create"><span>商品新規追加</span></a>
+    </div>
     <?php endif; ?>
 <div class="name_boxes">
     <p>オリジナルブランド一覧</p>
     
-     <a href="/brandnames/1"> 
-     <div class="Top_Value">イオン：Top Value </div>
-     </a>
- 
-      <a href="/brandnames/2">
-       <div class="Sselect">スギ薬局：Sセレクト</div>
-       </a>
-  
-      <a href="brandnames/3" >
-       <div class="Coops">コープ：Coop's</div>
-      </a>
+     <a class="Top_Value pushright" href="/brandnames/1"><span>イオン：Top Value</span></a>
      
-      <a href="" >
-       <div class="bothers">その他ブランド：その他商品</div>
-      </a>
+      <a href="/brandnames/2" class="Sselect pushright"><span>スギドラッグ：Sセレクト</span></a>
+  
+      <a href="brandnames/3" class="Coops pushright"><span>コープ：Coop's</span></a>
+     
+      <a href="" class="bothers pushright"><span>その他ブランド：その他商品</span></a>
 </div>
 
 <div class="category_boxes">
     <p>カテゴリ一覧</p>
     
-      <a href="/categories/1">
-      <div class="foods">食料品</div>
-      </a>
+     <a href="/categories/1" class="foods pushright"><span>食料品</span></a>
       
-  　　<a class="papers" href="">紙製品</a>
- 　　　
- 　　　 <a href="">
-     <div class="cleaners">掃除用品</div>
-     </a>
+  　　<a  href="" class="papers pushright"><span>紙製品</span></a>
+
+     <a href="" class="cleaners pushright"><span>掃除用品</span></a>
      
-     <a href="">
-     <div class="cothers">その他</div>
-     </a>
+     <a href="" class="cothers pushright"><span>その他</span></a>
      
 </div>
 

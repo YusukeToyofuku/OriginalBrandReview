@@ -94,3 +94,8 @@ h1{
     text-align: center;
     font-size: 20px
 }
+.delete{
+    display: block;
+  margin: auto;
+    color:red;
+}
