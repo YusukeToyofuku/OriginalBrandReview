@@ -10,10 +10,12 @@
     </head>
 <body>
     <h1>商品編集画面</h1>
+    
     <div class="posts">
         <form action="/posts/{{ $post->id }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
+            
             <div class="image">
     <h3>画像選択:&nbsp;</h3>
     <input type="file" name="image" value="{{$post->image_path }}">
@@ -47,9 +49,14 @@
         @endforeach
     </select>
  </div>
+ <form  method="post" action="{{route('posts.delete',['post'=>$post->id])}}">
+                　      @csrf
+                　      @method('DELETE')
+                　       <button class="delete" >商品を削除</button>
+                　       </form>
 </div>
 　　　　　　<div class='caution'>※商品名と商品概要は必ず入力してください。</div>
-            <input type="submit" value="上記内容で保存する">
+            <input type="submit" class="submission" value="上記内容で保存する">
         </form>
     </div>
     <div class="back">[<a href="/">トップページに戻る</a>]</div>

@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="{{secure_asset('css/show.css')}}">
     </head>
     <body>
-        <!--商品詳細ページ-->
+        <!--商品詳細画面-->
                 <div class='post_detail'>
                     <img src="{{ $post->image_path }}">
                     <div class='content'>
@@ -44,7 +44,11 @@
                       {{$review->user->name}}
                 　
                 　@if($user_id == $review->user_id)
-                　   <form method="DELETE" action="{{route('review.delete',['review'=>$review->id])}}">レビューを削除</form>
+                　   <form  method="post" action="{{route('review.delete',['review'=>$review->id])}}">
+                　      @csrf
+                　      @method('DELETE')
+                　       <button>レビューを削除</button>
+                　       </form>
                 　@endif
                 　
                 　</div>

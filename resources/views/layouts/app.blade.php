@@ -77,10 +77,10 @@
             @yield('content')
         </main>
             <!--フッター-->
-     <nav class="footer navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class='copyright'>
+     <nav class=" navbar-expand-md navbar-light bg-white shadow-sm">
+            <p class='copyright'>
                 © Copyright:{{ config('app.name') }}
-            </div>
+            </p>
     </div>
 </body>
 </html>
