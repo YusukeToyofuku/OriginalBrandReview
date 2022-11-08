@@ -29,5 +29,11 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    
+    'google' => [
+    'client_id' => env('942209401678-tjfh44b29crk0o0nv3ke0vqih80o7vso.apps.googleusercontent.com'),
+    'client_secret' => env('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'),
+    'redirect' => env('https://original-brand-review.herokuapp.com/') . '/login/google/callback',
+    ],
 
 ];
