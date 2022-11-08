@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
         <title>OBMR</title>
         <link rel="stylesheet" href="{{secure_asset('css/styles.css')}}">
+        <meta name="google-site-verification" content="D0pYrUlcS5AQAI250uRfZqEnaczbKT9oPdEnPERhEaE" />
     </head>
  <body>
         <div class="top">
