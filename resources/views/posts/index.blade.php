@@ -17,13 +17,13 @@
          <img src="{{asset('images/main.jpg')}}">
          </div>
          
-
-    <div class=search_box>
-          <form method="GET" action="/search">
+     <form method="GET" action="/search">
+      <div class=search_box>
         <input type="text" size="60" placeholder="商品名を入力" name="keyword" value="@if (isset($keyword)) @endif">
        <input type="submit" value="検索">
+      </div>
      </form>
-    </div>
+ 
      @auth
      <div class="create">
       <a class="create_new pushright" href="/posts/create"><span>商品新規追加</span></a>
