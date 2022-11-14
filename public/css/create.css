@@ -55,7 +55,7 @@ h1{
     padding:5px;
 }
 .brandname>select{
-    font-size:50px;
+    font-size:25px;
 }
 .category{
     justify-content: center;
@@ -63,7 +63,7 @@ h1{
     padding:5px;
 }
 .category>select{
-    font-size:50px;
+    font-size:25px;
 }
 .caution{
     color:#ff0000;
