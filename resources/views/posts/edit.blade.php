@@ -45,16 +45,15 @@
                     @endforeach
                 </select>
             </div>
-            <form  method="post" action="{{route('posts.delete',['post'=>$post->id])}}">
-                @csrf
-                @method('DELETE')
-                <button class="delete" >商品を削除</button>
-            </form>
-            </div>
         <div class='caution'>※商品名と商品概要は必ず入力してください。</div>
         <input type="submit" class="submission" value="上記内容で保存する">
     </form>
     </div>
+    <form  method="post" action="{{route('posts.delete',['post'=>$post->id])}}">
+                @csrf
+                @method('DELETE')
+                <button class="delete" >商品を削除</button>
+    </form>
     <div class="back">[<a href="/">トップページに戻る</a>]</div>
 </body>
 </html>
