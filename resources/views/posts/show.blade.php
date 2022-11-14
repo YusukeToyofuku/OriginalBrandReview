@@ -18,7 +18,7 @@
                       <p class='body'>{{ $post->body }}</p>
                     </div>
                     <div class='detail'>
-                      <div class='brandname_name'>ブランド名{{ $post->brandname->name}}</div>
+                      <div class='brandname_name'>ドラッグストア名{{ $post->brandname->name}}</div>
                       <div class='category_name'>カテゴリー名{{$post->category->name}}</div>
                       <div class='updated_at'>最終更新日{{$post->updated_at}}</div>
                         @if($user_id == $post->user_id)

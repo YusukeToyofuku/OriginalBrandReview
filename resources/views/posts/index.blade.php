@@ -46,27 +46,27 @@
       
       <a href="brandnames/7" class="Kokokara pushright"><span>ココカラファイン</span></a>
      
-      <a href="/brandnames/8" class="bothers pushright"><span>その他ドラッグストア</span></a>
+      <a href="/brandnames/14" class="bothers pushright"><span>その他ドラッグストア</span></a>
 </div>
 
 <div class="category_boxes">
     <p>カテゴリ一覧</p>
      
-     <a href="/categories/1" class="foods pushright"><span>食料品</span></a>
+     <a href="/categories/4" class="foods pushright"><span>食料品</span></a>
      
-     <a href="/categories/2" class="drag pushright"><span>医薬品</span></a>
+     <a href="/categories/14" class="drag pushright"><span>医薬品</span></a>
      
-     <a href="/categories/3" class="beauty pushright"><span>美容用品</span></a>
+     <a href="/categories/24" class="beauty pushright"><span>美容用品</span></a>
      
-     <a href="/categories/4" class="paper pushright"><span>紙製品</span></a>
+     <a href="/categories/34" class="paper pushright"><span>紙製品</span></a>
   　
-     <a href="/categories/5" class="cleaner pushright"><span>掃除用品</span></a>
+     <a href="/categories/44" class="cleaner pushright"><span>掃除用品</span></a>
      
-     <a href="/categories/6" class="pet pushright"><span>ペット用品</span></a>
+     <a href="/categories/54" class="pet pushright"><span>ペット用品</span></a>
      
-     <a href="/categories/7" class="wash pushright"><span>洗剤製品</span></a>
+     <a href="/categories/64" class="wash pushright"><span>洗剤製品</span></a>
      
-     <a href="/categories/8" class="cothers pushright"><span>その他</span></a>
+     <a href="/categories/74" class="cothers pushright"><span>その他製品</span></a>
      
 </div>
 
