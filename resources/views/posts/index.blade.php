@@ -14,13 +14,13 @@
     </head>
  <body>
         <div class="top">
-         <img src="{{asset('images/main.jpg')}}">
+         <img src="{{asset('images/home.jpg')}}">
          </div>
          
      <form method="GET" action="/search">
       <div class=search_box>
-        <input type="text" size="60" placeholder="商品名を入力" name="keyword" value="@if (isset($keyword)) @endif">
-       <input type="submit" value="検索">
+       <input class="text" type="text" size="60" placeholder="商品名を入力" name="keyword" value="@if (isset($keyword)) @endif">
+       <input class="submit" type="submit" value="検索">
       </div>
      </form>
  
@@ -30,27 +30,43 @@
     </div>
     @endauth
 <div class="name_boxes">
-    <p>オリジナルブランド一覧</p>
+    <p>ドラッグストア一覧</p>
     
-     <a class="Top_Value pushright" href="/brandnames/1"><span>イオン：Top Value</span></a>
-     
-      <a href="/brandnames/2" class="Sselect pushright"><span>スギドラッグ：Sセレクト</span></a>
+      <a href="/brandnames/1" class="Sselect pushright"><span>スギドラッグ</span></a>
   
-      <a href="brandnames/3" class="Coops pushright"><span>コープ：Coop's</span></a>
+      <a href="brandnames/2" class="Welcia pushright"><span>ウエルシア</span></a>
+      
+      <a href="brandnames/3" class="Turuha pushright"><span>ツルハドラッグ</span></a>
+      
+      <a href="brandnames/4" class="Cosmos pushright"><span>コスモス薬品</span></a>
+      
+      <a href="brandnames/5" class="Sundrag pushright"><span>サンドラッグ</span></a>
+      
+      <a href="brandnames/6" class="Matsumoto pushright"><span>マツモトキヨシ</span></a>
+      
+      <a href="brandnames/7" class="Kokokara pushright"><span>ココカラファイン</span></a>
      
-      <a href="" class="bothers pushright"><span>その他ブランド：その他商品</span></a>
+      <a href="/brandnames/8" class="bothers pushright"><span>その他ドラッグストア</span></a>
 </div>
 
 <div class="category_boxes">
     <p>カテゴリ一覧</p>
-    
-     <a href="/categories/1" class="foods pushright"><span>食料品</span></a>
-      
-  　　<a  href="" class="papers pushright"><span>紙製品</span></a>
-
-     <a href="" class="cleaners pushright"><span>掃除用品</span></a>
      
-     <a href="" class="cothers pushright"><span>その他</span></a>
+     <a href="/categories/1" class="foods pushright"><span>食料品</span></a>
+     
+     <a href="/categories/2" class="drag pushright"><span>医薬品</span></a>
+     
+     <a href="/categories/3" class="beauty pushright"><span>美容用品</span></a>
+     
+     <a href="/categories/4" class="paper pushright"><span>紙製品</span></a>
+  　
+     <a href="/categories/5" class="cleaner pushright"><span>掃除用品</span></a>
+     
+     <a href="/categories/6" class="pet pushright"><span>ペット用品</span></a>
+     
+     <a href="/categories/7" class="wash pushright"><span>洗剤製品</span></a>
+     
+     <a href="/categories/8" class="cothers pushright"><span>その他</span></a>
      
 </div>
 

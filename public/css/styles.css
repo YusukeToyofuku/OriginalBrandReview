@@ -7,10 +7,15 @@
     text-align: center;
     margin:0px 0px 50px;
 }
-.search_box>input{
-    width:auto;
-    height:50px
+.text{
+    width:70%;
+    height:50px;
+    min-width:300px;
     }
+.submit{
+    width:50px;
+    height:50px;
+}
 .create{
     text-align:center;
 }
@@ -65,32 +70,7 @@
   border-left: 5px solid #000;
   background: #f4f4f4;
 }
-.Top_Value{
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 25px;
-    background: transparent;
-    outline: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    margin:10px;
-}
-.Top_Value:hover{
-  border-color:transparent; 
-}
-.Top_Value span {
-  color:#FFFF99;
-  font-size:40px;
-  position: relative;
-  z-index: 2;
-  display: block;
-  padding: 10px 30px;
-  background:purple;
-  border-radius: 25px;
-  transition: all 0.3s ease;
-}
+
 .Sselect{
     position: relative;
     display: inline-block;
@@ -117,7 +97,7 @@
   border-radius: 25px;
   transition: all 0.3s ease;
 }
-.Coops{
+.Welcia{
     position: relative;
     display: inline-block;
     text-decoration: none;
@@ -129,10 +109,37 @@
     transition: all 0.3s ease;
     margin:10px;
 }
-.Coops:hover{
+.Welcia:hover{
   border-color:transparent; 
 }
-.Coops span {
+.Welcia span {
+  color:white;
+  font-size:40px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 10px 30px;
+  background:#8EB8FF;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.Turuha{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    background: transparent;
+    outline: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin:10px;
+    }
+.Turuha:hover{
+  border-color:transparent; 
+}
+.Turuha span {
   color:white;
   font-size:40px;
   position: relative;
@@ -140,6 +147,114 @@
   display: block;
   padding: 10px 30px;
   background:#FF3366;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.Cosmos{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    background: transparent;
+    outline: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin:10px;
+    }
+.Cosmos:hover{
+  border-color:transparent; 
+}
+.Cosmos span {
+  color:white;
+  font-size:40px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 10px 30px;
+  background:#FF3399;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.Sundrag{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    background: transparent;
+    outline: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin:10px;
+    }
+.Sundrag:hover{
+  border-color:transparent; 
+}
+.Sundrag span {
+  color:white;
+  font-size:40px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 10px 30px;
+  background:#FF0000;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.Matsumoto{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    background: transparent;
+    outline: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin:10px;
+    }
+.Matsumoto:hover{
+  border-color:transparent; 
+}
+.Matsumoto span {
+  color:#0000000;
+  font-size:40px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 10px 30px;
+  background:#FFFF11;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.Kokokara{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    background: transparent;
+    outline: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin:10px;
+    }
+.Kokokara:hover{
+  border-color:transparent; 
+}
+.Kokokara span {
+  color:#000077;
+  font-size:40px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 10px 30px;
+  background:white;
   border-radius: 25px;
   transition: all 0.3s ease;
 }
@@ -194,7 +309,7 @@
   border-color:transparent; 
 }
 .foods span {
-  color:#005500;
+  color:#000000;
   font-size:40px;
   position: relative;
   z-index: 2;
@@ -204,7 +319,7 @@
   border-radius: 25px;
   transition: all 0.3s ease;
 }
-.papers{
+.drag{
     position: relative;
     display: inline-block;
     text-decoration: none;
@@ -216,10 +331,63 @@
     transition: all 0.3s ease;
     margin:10px;
     }
-.papers:hover{
+.drag:hover{
   border-color:transparent; 
 }
-.papers span {
+.drag span {
+  color:#000000;
+  font-size:40px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 10px 30px;
+  background:#66CC00;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.beauty{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    background: transparent;
+    outline: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin:10px;
+    }
+.beauty:hover{
+  border-color:transparent; 
+}
+.beauty span {
+  color:#000000;
+  font-size:40px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 10px 30px;
+  background:#FFCCFF;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.paper{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    background: transparent;
+    outline: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin:10px;
+    }
+.paper:hover{
+  border-color:transparent; 
+}
+.paper span {
   color:#000000;
   font-size:40px;
   position: relative;
@@ -230,7 +398,7 @@
   border-radius: 25px;
   transition: all 0.3s ease;
 }
-.cleaners{
+.cleaner{
     position: relative;
     display: inline-block;
     text-decoration: none;
@@ -242,10 +410,10 @@
     transition: all 0.3s ease;
     margin:10px;
     }
-.cleaners:hover{
+.cleaner:hover{
   border-color:transparent; 
 }
-.cleaners span {
+.cleaner span {
   color:#000000;
   font-size:40px;
   position: relative;
@@ -253,6 +421,60 @@
   display: block;
   padding: 10px 30px;
   background:#BBFFFF;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.pet{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    background: transparent;
+    outline: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin:10px;
+    }
+.pet:hover{
+  border-color:transparent; 
+}
+.pet span {
+  color:#000000;
+  font-size:40px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 10px 30px;
+  background:#996633;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.wash{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    background: transparent;
+    outline: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin:10px;
+    }
+.wash:hover{
+  border-color:transparent; 
+}
+.wash span {
+  color:#000000;
+  font-size:40px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 10px 30px;
+  background:#6699FF;
   border-radius: 25px;
   transition: all 0.3s ease;
 }

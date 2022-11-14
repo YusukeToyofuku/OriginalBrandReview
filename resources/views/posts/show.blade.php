@@ -61,46 +61,45 @@
         
         <!--商品レビュー投稿画面-->
         @guest
-        <p class="guest_caution">レビューを投稿するには必ずログインしてください。</p>
-        <a class="guest_login" href="/login">ログインしてレビューを投稿</a>
+            <p class="guest_caution">レビューを投稿するには必ずログインしてください。</p>
+            <a class="guest_login" href="/login">ログインしてレビューを投稿</a>
         @endguest
         @if(!$user_id == $review->user_id)
         <form action="/review/store" enctype="multipart/form-data" method="POST">
                @csrf
-<div class="posts">
-    <h1>レビュー入力フォーム</h1>
-<div class="image">
-    <h3>画像選択:&nbsp;</h3>
-    <input type="file" name="image">
-    {{ csrf_field() }}
-</div>
-    <div class="title">
-    <h3>レビュータイトル入力:&nbsp;</h3>
-    <input type="text" name="title" placeholder="レビュータイトル" />
-    </div>
- <div class="body">
-    <h3>レビュー内容入力</h3>
-    <textarea name="comment" placeholder="レビュー内容">{{ old('review.comment') }}</textarea>
- </div>
-<div class="evaluation">
-            <input id="star1" type="radio" name="rating" value="5" />
-            <label for="star1"><span class="text"></span>★</label>
-            <input id="star2" type="radio" name="rating" value="4" />
-            <label for="star2"><span class="text"></span>★</label>
-            <input id="star3" type="radio" name="rating" value="3" checked="checked"/>
-            <label for="star3"><span class="text"></span>★</label>
-            <input id="star4" type="radio" name="rating" value="2" />
-            <label for="star4"><span class="text"></span>★</label>
-            <input id="star5" type="radio" name="rating" value="1" />
-            <label for="star5"><span class="text"></span>★</label>
-</div>
-        <input value="{{ $post->id }}" type="hidden" name="post_id" />
-        
- <input type="submit" class='submission' value="上記内容で投稿する"/>
- </div>
-</form>
+               <div class="posts">
+                   <h1>レビュー入力フォーム</h1>
+                   <div class="image">
+                       <h3>画像選択:&nbsp;</h3>
+                       <input type="file" name="image">
+                       {{ csrf_field() }}
+                   </div>
+                   <div class="title">
+                       <h3>レビュータイトル入力:&nbsp;</h3>
+                       <input type="text" name="title" placeholder="レビュータイトル" />
+                   </div>
+                   <div class="body">
+                       <h3>レビュー内容入力</h3>
+                       <textarea name="comment" placeholder="レビュー内容">{{ old('review.comment') }}</textarea>
+                   </div>
+                   <div class="evaluation">
+                       <input id="star1" type="radio" name="rating" value="5" />
+                       <label for="star1"><span class="text"></span>★</label>
+                       <input id="star2" type="radio" name="rating" value="4" />
+                       <label for="star2"><span class="text"></span>★</label>
+                       <input id="star3" type="radio" name="rating" value="3" checked="checked"/>
+                       <label for="star3"><span class="text"></span>★</label>
+                       <input id="star4" type="radio" name="rating" value="2" />
+                       <label for="star4"><span class="text"></span>★</label>
+                       <input id="star5" type="radio" name="rating" value="1" />
+                       <label for="star5"><span class="text"></span>★</label>
+                   </div>
+                   <input value="{{ $post->id }}" type="hidden" name="post_id" />
+                   <input type="submit" class='submission' value="上記内容で投稿する"/>
+                </div>
+    </form>
         @endif
-<script src="jquery.js"></script>
-  <script src="jquery.rateyo.js"></script>
+        <script src="jquery.js"></script>
+        <script src="jquery.rateyo.js"></script>
 </body>
 @endsection
