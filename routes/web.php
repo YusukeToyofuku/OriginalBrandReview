@@ -36,7 +36,13 @@ Route::get('/categories/{category}','ListController@Category');
 Route::post('/review/store','ReviewController@store');
 //レビュー削除処理
 Route::delete('/review/{review}','ReviewController@delete')->name('review.delete');;
+//googleログイン処理
+Route::get('login/google', 'Auth\LoginController@redirectToGoogle');
+Route::get('login/google/callback', 'Auth\LoginController@handleGoogleCallback');
+
+
 
 //メインページ
 Route::get('/', 'PostController@index');
 Auth::routes();
+
