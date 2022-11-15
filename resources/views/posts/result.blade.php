@@ -16,28 +16,29 @@
 <body>
   <h1>検索結果</h1>
   <h1>検索キーワード：{{$search}}</h1> 
-@if(!$keywords->isEmpty())
-<div class='lists'>
+  @if(!$keywords->isEmpty())
+  <div class='lists'>
   @foreach($keywords as $keyword)
     <div class='list'>
     　　<img src="{{ $keyword->image_path }}">
-                    <div class='content'>
-                      <h2 class='title'>{{ $keyword->title }}</h2>
-                      <p class='body'>{{ $keyword->body }}</p>
-                    </div>
-                    <div class='detail'>
-                      <div class='brandname_name'>ブランド名{{ $keyword->brandname->name}}</div>
-                      <div class='category_name'>カテゴリー名{{$keyword->category->name}}</div>
-                      <a class="btn pushdown" href="{{ route ('posts.show',['post'=>$keyword->id])}}"><span>レビューを閲覧・投稿</span></a>
-                    </div>
+    　　<div class='content'>
+    　　    <h2 class='title'>{{ $keyword->title }}</h2>
+    　　    <p class='body'>{{ $keyword->body }}</p>
+    　　  </div>
+    　　  <div class='detail'>
+    　　    <div class='brandname_name'>ブランド名{{ $keyword->brandname->name}}</div>
+    　　    <div class='category_name'>カテゴリー名{{$keyword->category->name}}</div>
+    　　    <a class="btn pushdown" href="{{ route ('posts.show',['post'=>$keyword->id])}}"><span>レビューを閲覧・投稿</span></a>
+    　　  </div>
     </div>
+  </div>
   @endforeach
-@else　
+  @else　
    <div>該当する検索結果は存在しません</div>
    <form  method="GET" action="/search">
        <input type="text" name="keyword">
        <input type="submit" value="検索">
    </form>
-@endif
+   @endif
 </body>
 @endsection
