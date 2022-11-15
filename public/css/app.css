@@ -10964,11 +10964,5 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
-  .copyright{
-    width:auto;
-    text-align: center;
-    display:inline-block;
-    justify-content:center;
-  }
 }
 
