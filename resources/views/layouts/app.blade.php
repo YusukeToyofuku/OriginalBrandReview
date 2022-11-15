@@ -76,11 +76,10 @@
         <main class="py-4">
             @yield('content')
         </main>
-            <!--フッター-->
-     <nav class=" navbar-expand-md navbar-light bg-white shadow-sm">
-            <p class='copyright'>
-                © Copyright:{{ config('app.name') }}
-            </p>
     </div>
+    <!--フッター-->
+    <h5 class="footeraabbcc" style="text-align:center;background:white;width:auto;">
+                © Copyright:{{ config('app.name') }}
+    </h5>
 </body>
 </html>
