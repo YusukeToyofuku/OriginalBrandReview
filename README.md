@@ -1,78 +1,64 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+#Original Brand Review(h1)
+!title(.images/
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+概要(h2)
 
-## About Laravel
+ドラッグストアのオリジナル自社ブランド（プライベートブランド）商品レビューサイトです。
+PC,スマホ等の環境でご利用いただけます。
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+デプロイ
+＃URL
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+＃テストアカウント
+テストアカウント名：Test
+メールアドレス：test@icloud.com
+パスワード：S!n&1BmQKtbWEo9
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+テストアカウントでログインするには、トップページ上部にあるログインボタンを押していただき、上記メールアドレスとパスワードを入力してください。
+なお、Googleログインもしくはユーザー登録をすることで、テストアカウント以外からもログイン可能です。
 
-## Learning Laravel
+＃作成背景
+アルバイト先のドラッグストアでプライベートブランドの商品についてお客様から頻繁に質問をいただきました。しかし、ドラッグストアのプライベートブランド商品はマイナーなため、多くの場合ネットに口コミがなく、参考にできる情報がありません。そのため、これを解消するために、当WEBアプリを制作しました。
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+＃使用技術
+・フレームワーク
+-Laravel
+・言語
+-PHP
+-HTML/CSS
+-Mysql
+・開発環境
+-AWS
+ -EC2
+ ・デプロイ環境
+-Heroku
+ 
+ 
+ #機能一覧
+ ・ログイン機能
+ ・Googleログイン機能
+ ・キーワード検索機能
+ ・カテゴリー別一覧表示機能
+ ・商品情報投稿機能
+ ・商品情報編集・削除機能
+ ・レビュー投稿機能
+ ・レビュー削除機能
+ 
+ #工夫点
+ ・UI
+ 　　・スマホ、PC使用時もUIが崩れないようCSSにこだわった。
+ 　　・UIにボタンを多用し、フロントエンドの操作感を重要視した。
+  ・ログインユーザーと非ログインユーザーで表示する機能を変えた。例：ログイン者のみにレビュー投稿ボタンの表示
+ ・バックエンド
+ 　　・レビュー投稿者のみにレビューの削除ボタンを表示するようにした。また、これを実装するためにレビューのIDと投稿者ユーザーIDを紐づけた。
+  ・商品情報検索であいまい検索が可能
+  
+ 
+ 
+ 
+ ＃サイトの利用方法
+ ・テストアカウントでのログイン
+ 
+ ・
+ 
+ 
