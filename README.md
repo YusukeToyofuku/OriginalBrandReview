@@ -1,9 +1,10 @@
 # Original Brand Review
-!title(.images/
+![IMG_0372 3](https://user-images.githubusercontent.com/110439048/202403741-77afdd22-017e-4e03-9d07-5703ee273483.jpg)
 
 ## 概要  
 
 ドラッグストアのオリジナル自社ブランド（プライベートブランド）商品レビューサイトです。
+
 PC,スマホ等の環境でご利用いただけます。  
 
 ## デプロイ
