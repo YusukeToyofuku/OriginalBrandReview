@@ -68,8 +68,8 @@ PC,スマホ等の環境でご利用いただけます。
  手順2：検索ボックス隣の検索ボタンをクリック  
  
  ### 商品の投稿（ログイン後のトップページ）
- <img width="600" alt="スクリーンショット 2022-11-17 18 33 31" src="https://user-images.githubusercontent.com/110439048/202410254-6b1bff05-81c0-4014-bdbe-07c462e71851.png">  
-<img width="600" alt="スクリーンショット 2022-11-17 18 35 40" src="https://user-images.githubusercontent.com/110439048/202410281-77c18bd7-1527-482c-aca3-271b725d92ad.png">  
+ <img width="400" alt="スクリーンショット 2022-11-17 18 33 31" src="https://user-images.githubusercontent.com/110439048/202410254-6b1bff05-81c0-4014-bdbe-07c462e71851.png">  
+<img width="400" alt="スクリーンショット 2022-11-17 18 35 40" src="https://user-images.githubusercontent.com/110439048/202410281-77c18bd7-1527-482c-aca3-271b725d92ad.png">  
   
  手順1：トップページのオレンジ色の商品新規追加ボタンをクリック  
  手順2：商品詳細情報を入力  
